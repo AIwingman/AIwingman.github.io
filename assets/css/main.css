@@ -1266,6 +1266,16 @@ input, select, textarea {
 
 		}
 
+		@media (max-width: 768px) { /* Targets mobile devices */
+			.container {
+				flex-direction: column; /* Stack elements vertically */
+				height: auto; /* Avoid stretching */
+			}
+			.image {
+				max-width: 80%;
+			}
+		}
+
 		@media screen and (max-width: 736px) {
 
 			.row {
@@ -2350,6 +2360,7 @@ input, select, textarea {
 				line-height: 1em;
 			}
 
+			
 /* Image */
 
 	.image {
@@ -2357,6 +2368,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		
 	}
 
 		.image img {
